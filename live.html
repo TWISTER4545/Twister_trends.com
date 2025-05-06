@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Live Stream</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .live-section {
+      background-color: #000;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .live-section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #ff4a4a;
+    }
+
+    .live-video iframe {
+      width: 90%;
+      max-width: 800px;
+      height: 450px;
+      border: none;
+    }
+
+    @media (max-width: 600px) {
+      .live-video iframe {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="live-section" id="live">
+    <h2>🔴 Live Now</h2>
+    <div class="live-video">
+      <iframe src="https://www.youtube.com/embed/YOUR_LIVE_VIDEO_ID?autoplay=1"
+              allow="autoplay; encrypted-media"
+              allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+</body>
+</html>

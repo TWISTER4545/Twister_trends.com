@@ -1,0 +1,40 @@
+/* General video styling */
+video {
+    width: 100%;          /* Make the video fill the width of its container */
+    height: auto;         /* Maintain aspect ratio of the video */
+    max-width: 800px;     /* Limit the video width to a maximum of 800px */
+    border: 2px solid #3498db; /* Add a border around the video */
+    border-radius: 10px;  /* Rounded corners for the video */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for aesthetics */
+    display: block;       /* Ensure the video behaves as a block element (takes full width) */
+    margin: 0 auto;       /* Center the video within its container */
+}
+
+/* For responsive design: When the video is in a responsive container */
+.video-container {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.video-container video {
+    width: 100%;           /* Make video responsive */
+    height: auto;          /* Maintain aspect ratio */
+}
+
+/* To handle different screen sizes, you can add media queries */
+@media screen and (max-width: 768px) {
+    video {
+        max-width: 100%;  /* Full width on smaller screens */
+        height: auto;     /* Keep the aspect ratio */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    video {
+        max-width: 100%;
+        height: auto;     /* Maintain aspect ratio on smaller screens */
+    }
+}
